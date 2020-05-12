@@ -1,0 +1,62 @@
+@PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = "mId")
+    private int mId;
+    
+    @Nullable
+    @ColumnInfo(name = "mCreationDate")
+    private String mCreationDate
+    private String mAttitude;
+    
+    public Museum(@Nullable String name, String CreationDate, String Attitude, String Type, int Evaluation) {
+        mId = Id;
+        mCreationDate = CreationDate;
+        mAttitude = Attitude;
+        mType = Type;
+        mEvaluation = Evaluation
+    }
+    
+    public int getId() {
+        return mId;
+    }
+    
+    public void setId(int id) {
+        mId = id;
+    }
+
+    public String getCreationDate() {
+        return mCreationDate;
+    }
+
+    public void setCreationDate(String CreationDate) {
+        mCreationDate = CreationDate;
+    }
+
+    public String getAttitude() {
+        return mAttitude;
+    }
+
+    public void setAttitude(String style) {
+        mAttitude= Attitude;
+    }
+
+    public String getType() {
+        return mType;
+    }
+
+    public void setScore(String Type) {
+        mType = Type;
+    }
+
+    public int getEvaluation() {
+        return mEvaluation;
+    }
+
+    public void setEvaluation(int Evaluation) {
+        mEvaluation = Evaluation;
+    }
+
+    private String mType;
+    private int mEvaluation;
+
+}
